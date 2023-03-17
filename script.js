@@ -43,6 +43,6 @@ function calcular() {
   // console.log(precos)
   // console.log(barato)
   console.log(maisBarato)
-  console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${maisBarato[0][0]} por litro.`)
+  console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`)
 }
 

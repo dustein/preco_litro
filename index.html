@@ -4,43 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <title>Melhor Preço</title>
 </head>
 <body>
-  <h1>Calcular Preço</h1>
-  <form action="" class="lista">
-    <div class="tamanhos">
-      <div>
-        <label for="l250">Lata 250<input type="text" class="latas" id="l250" data-key="250"></label>
-      </div>
-      <div>
-        <label for="l269">Lata 269<input type="text" class="latas" id="l269" data-key="269"></label>
-      </div>
-      <div>
-        <label for="l310">Lata 310<input type="text" class="latas" id="l310" data-key="310"></label>
-      </div>
-      <div>
-        <label for="l355">Lata 355<input type="text" class="latas" id="l355" data-key="355"></label>
-      </div>
-      <div>
-        <label for="l473">Lata 473<input type="text" class="latas" id="l473" data-key="473"></label>
-      </div>
-      <div>
-        <label for="l500">Lata 500<input type="text" class="latas" id="l500" data-key="500"></label>
-      </div>
 
+  <section class="first">
+
+    <div class="titulo">
+      <h1>Calcular Preço</h1>
     </div>
-  </form>
+    
+    <div class="tipos">
 
-  <button id="calcular" onclick="calcular()" type="button">Calcular</button>
+      <div class="unidade">
+        <p>Lata 250</p>
+        <input type="text" class="latas" id="l250" data-key="250">
+      </div>
+      <div class="unidade">
+        <p>Lata 269</p>
+        <input type="text" class="latas" id="l269" data-key="269"></label>
+      </div>
+      <div class="unidade">
+        <p>Lata 310</p>
+        <input type="text" class="latas" id="l310" data-key="310"></label>
+      </div>
+      <div class="unidade">
+        <p>Lata 355</p>
+        <input type="text" class="latas" id="l355" data-key="355"></label>
+      </div>
+      <div class="unidade">
+        <p>Lata 473</p>
+        <input type="text" class="latas" id="l473" data-key="473"></label>
+      </div>
+      <div class="unidade">
+        <p>Lata 500</p>
+        <input type="text" class="latas" id="l500" data-key="500"></label>
+      </div>  
+    </div>
 
+    <button id="calcular" onclick="calcular()" type="button">Calcular</button>
 
-
-
-
+  </section>
   
-
   <p>Qual tamanho de cerveja está mais em conta no mercado?</p>
   <p>Latinha, latão, ou long neck? Garrafa de 600 ou Litrão?</p>
   <p>Clique em "Iniciar" para fazer o cálculo e economizar na festa!</p>
