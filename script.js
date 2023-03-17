@@ -13,6 +13,8 @@ function calcular() {
   let tamanho;
   let preco;
   let precoLitro;
+  let barato = 0;
+  let maisBarato;
 
   latas.forEach( item => {
 
@@ -22,15 +24,25 @@ function calcular() {
       preco = Number(item.value)
       precoLitro = preco * 1000 / tamanho
 
+      if(barato == 0) {
+        barato = precoLitro
+      } else if (barato > precoLitro) {
+        barato = precoLitro
+      }
 
-      precos.push(precoLitro)
-
+      precos.push([precoLitro, tamanho])
+      
     }
     
+    maisBarato = precos.filter( item => item[0] == barato)
+
   })
 
-  precos.sort((a, b) => a - b);
-  console.log(precos)
+  // precos.sort((a, b) => a - b);
 
+  // console.log(precos)
+  // console.log(barato)
+  console.log(maisBarato)
+  console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${maisBarato[0][0]} por litro.`)
 }
 
