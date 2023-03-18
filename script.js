@@ -36,7 +36,6 @@ function calcular() {
     }
     
     maisBarato = precos.filter( item => item[0] == barato)
-
   })
 
   // precos.sort((a, b) => a - b);
