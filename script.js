@@ -7,6 +7,7 @@ const l473 = document.querySelector("#l473");
 const l500 = document.querySelector("#l500");
 
 const latas = document.querySelectorAll(".latas");
+const resultado = document.querySelector(".tipos");
 const precos = [];
 
 function calcular() {
@@ -44,5 +45,6 @@ function calcular() {
   // console.log(barato)
   console.log(maisBarato)
   console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`)
+  resultado.innerHTML = `Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`;
 }
 
