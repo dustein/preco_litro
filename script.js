@@ -40,7 +40,6 @@ function calcular() {
   })
 
   // precos.sort((a, b) => a - b);
-
   // console.log(precos)
   // console.log(barato)
   console.log(maisBarato)
