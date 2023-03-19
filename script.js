@@ -2,7 +2,7 @@
 const l250 = document.querySelector("#l250");
 const l269 = document.querySelector("#l269");
 const l310 = document.querySelector("#l310");
-const l355 = document.querySelector("#l355");
+const l355 = document.querySelector("#l350");
 const l473 = document.querySelector("#l473");
 const l500 = document.querySelector("#l500");
 
@@ -39,8 +39,7 @@ function calcular() {
   })
 
   // precos.sort((a, b) => a - b);
-  // console.log(precos)
-  // console.log(barato)
+
   console.log(maisBarato)
   console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`)
   resultado.innerHTML = `Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`;
