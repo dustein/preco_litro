@@ -1,10 +1,10 @@
 
 const l250 = document.querySelector("#l250");
-const l269 = document.querySelector("#l269");
-const l310 = document.querySelector("#l310");
-const l355 = document.querySelector("#l350");
-const l473 = document.querySelector("#l473");
-const l500 = document.querySelector("#l500");
+const l350 = document.querySelector("#l269");
+const l473 = document.querySelector("#l310");
+const g250 = document.querySelector("#g250");
+const g330 = document.querySelector("#g330");
+const g600 = document.querySelector("#g600");
 
 const latas = document.querySelectorAll(".latas");
 const resultado = document.querySelector(".tipos");
