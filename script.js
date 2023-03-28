@@ -7,8 +7,31 @@ const g330 = document.querySelector("#g330");
 const g600 = document.querySelector("#g600");
 
 const latas = document.querySelectorAll(".latas");
+const unidades = document.querySelectorAll('.unidade');
 const resultado = document.querySelector(".tipos");
 const precos = [];
+
+//modal
+const switchModal = () => {
+  const modal = document.querySelector('.modal');
+  const switchAtual = modal.style.display;
+  if(switchAtual == 'block') {
+    modal.style.display = 'none'
+  } else {
+    modal.style.display = 'block'
+  }
+}
+//-----------------
+//pop up pega preço
+unidades.forEach( item => {
+  console.log(item)
+  item.addEventListener("click", () => {
+    console.log('clicou ' + item)
+    switchModal()
+    item.innerHTML = '<input type="text" class="latas" id="l250" data-key="250">'
+  })
+})
+// -----------------
 
 function calcular() {
   let tamanho;
