@@ -12,8 +12,8 @@ const resultado = document.querySelector(".tipos");
 const precos = [];
 
 //modal
+const modal = document.querySelector('.modal');
 const switchModal = () => {
-  const modal = document.querySelector('.modal');
   const switchAtual = modal.style.display;
   if(switchAtual == 'block') {
     modal.style.display = 'none'
@@ -22,13 +22,16 @@ const switchModal = () => {
   }
 }
 //-----------------
+function salvaPreco() {
+  precos.push("oi")
+}
 //pop up pega preço
 unidades.forEach( item => {
   console.log(item)
   item.addEventListener("click", () => {
-    console.log('clicou ' + item)
-    switchModal()
-    item.innerHTML = '<input type="text" class="latas" id="l250" data-key="250">'
+    modal.style.display = 'block'
+    salvaPreco()
+    console.log(precos)
   })
 })
 // -----------------
