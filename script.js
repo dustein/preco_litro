@@ -22,20 +22,36 @@ const switchModal = () => {
   }
 }
 //-----------------
-function salvaPreco() {
-  precos.push("oi")
-}
+
+// -------------------
 //pop up pega preço
 unidades.forEach( item => {
-  console.log(item)
+  const inputModal = document.querySelector('.latas')
+  inputModal.innerHTML = "esvaziar"
+  console.log(inputModal.value)
+  console.log(item.dataset.key)
   item.addEventListener("click", () => {
     modal.style.display = 'block'
-    salvaPreco()
+    precos.push([inputModal.value, item.dataset.key])
     console.log(precos)
   })
 })
 // -----------------
 
+//Abre pop up por DOM
+// unidades.forEach( item => {
+//   item.addEventListener('click', () => {
+//     console.log("cick")
+//     const modal = document.createElement("div")
+//     modal.className = "modalContent"
+//     const precoP = modal.createElement("p")
+//     const pegaPreco = document.createTextNode("Preço :")
+//     precoP.appendChild(pegaPreco)
+//     item.appendChild(modal)
+//   })
+// })
+// por enquanto deixando de lado, foco no modal css
+// -------------------
 function calcular() {
   let tamanho;
   let preco;
