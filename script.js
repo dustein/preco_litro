@@ -1,57 +1,25 @@
 
-const l250 = document.querySelector("#l250");
-const l350 = document.querySelector("#l269");
-const l473 = document.querySelector("#l310");
-const g250 = document.querySelector("#g250");
-const g330 = document.querySelector("#g330");
-const g600 = document.querySelector("#g600");
-
 const latas = document.querySelectorAll(".latas");
 const unidades = document.querySelectorAll('.unidade');
 const resultado = document.querySelector(".tipos");
 const precos = [];
 
-//modal
-const modal = document.querySelector('.modal');
-const switchModal = () => {
-  const switchAtual = modal.style.display;
-  if(switchAtual == 'block') {
-    modal.style.display = 'none'
-  } else {
-    modal.style.display = 'block'
-  }
-}
-//-----------------
 
-// -------------------
+
 //pop up pega preço
 unidades.forEach( item => {
-  const inputModal = document.querySelector('.latas')
-  inputModal.innerHTML = "esvaziar"
-  console.log(inputModal.value)
-  console.log(item.dataset.key)
+  let valorDoInput = 0;
   item.addEventListener("click", () => {
-    modal.style.display = 'block'
-    precos.push([inputModal.value, item.dataset.key])
-    console.log(precos)
+
+    valorDoInput = window.prompt(`Preço da unidade ${item.dataset.key}ml`, "0.00")
+
+    precos.push([valorDoInput, item.dataset.key])
+    console.log(precos[0])
   })
 })
 // -----------------
 
-//Abre pop up por DOM
-// unidades.forEach( item => {
-//   item.addEventListener('click', () => {
-//     console.log("cick")
-//     const modal = document.createElement("div")
-//     modal.className = "modalContent"
-//     const precoP = modal.createElement("p")
-//     const pegaPreco = document.createTextNode("Preço :")
-//     precoP.appendChild(pegaPreco)
-//     item.appendChild(modal)
-//   })
-// })
-// por enquanto deixando de lado, foco no modal css
-// -------------------
+
 function calcular() {
   let tamanho;
   let preco;
@@ -59,26 +27,42 @@ function calcular() {
   let barato = 0;
   let maisBarato;
 
-  latas.forEach( item => {
+  for(let i=0; i<precos.length; i++) {
+    let precoItem = precos[i]
+    console.log(precoItem)
 
-    if(item.value != "") {
+    precoLitro = precoItem[0] * 100 / precoItem[1]
+    console.log(precoLitro)
 
-      tamanho = Number(item.dataset.key)
-      preco = Number(item.value)
-      precoLitro = preco * 1000 / tamanho
+    if(barato == 0) {
+      barato = precoLitro
+    } else if (barato > precoLitro) {
+      barato = precoLitro
+    } 
+  }
 
-      if(barato == 0) {
-        barato = precoLitro
-      } else if (barato > precoLitro) {
-        barato = precoLitro
-      }
+    console.log("precos : " + precos[1])
+    console.log("barato : " + barato)
+  // latas.forEach( item => {
 
-      precos.push([precoLitro, tamanho])
+  //   if(item.value == Number) {
+
+  //     tamanho = Number(item.dataset.key)
+  //     preco = Number(item.value)
+  //     precoLitro = preco * 1000 / tamanho
+
+  //     if(barato == 0) {
+  //       barato = precoLitro
+  //     } else if (barato > precoLitro) {
+  //       barato = precoLitro
+  //     }
+
+  //     precos.push([precoLitro, tamanho])
       
-    }
+  //   }
     
     maisBarato = precos.filter( item => item[0] == barato)
-  })
+
 
   // precos.sort((a, b) => a - b);
 
