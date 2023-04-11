@@ -14,7 +14,7 @@ unidades.forEach( item => {
     valorDoInput = window.prompt(`Preço da unidade ${item.dataset.key}ml`, "0.00")
 
     precos.push([valorDoInput, item.dataset.key])
-    console.log(precos[0])
+    console.log(precos)
   })
 })
 // -----------------
@@ -43,28 +43,10 @@ function calcular() {
 
     console.log("precos : " + precos[1])
     console.log("barato : " + barato)
-  // latas.forEach( item => {
 
-  //   if(item.value == Number) {
-
-  //     tamanho = Number(item.dataset.key)
-  //     preco = Number(item.value)
-  //     precoLitro = preco * 1000 / tamanho
-
-  //     if(barato == 0) {
-  //       barato = precoLitro
-  //     } else if (barato > precoLitro) {
-  //       barato = precoLitro
-  //     }
-
-  //     precos.push([precoLitro, tamanho])
-      
-  //   }
     
     maisBarato = precos.filter( item => item[0] == barato)
 
-
-  // precos.sort((a, b) => a - b);
 
   console.log(maisBarato)
   console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`)
