@@ -12,14 +12,16 @@ unidades.forEach( item => {
   item.addEventListener("click", () => {
 
     valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml`, "0.00"))
-
-    console.log(valorDoInput)
+    precoLitro = valorDoInput * 1000 / item.dataset.key
+    
+    console.log(valorDoInput, precoLitro, item.dataset.key)
 
     
     //valida input
     if(typeof(valorDoInput != NaN)) {
-      console.log("gravando push")
-      precos.push([valorDoInput, Number(item.dataset.key)])
+      precos.push([valorDoInput, Number(item.dataset.key), precoLitro])
+    } else {
+      console.log("Nao eh um numero")
     }
     //------------
 
@@ -29,30 +31,29 @@ unidades.forEach( item => {
 
 
 function calcular() {
-  let tamanho;
-  let preco;
-  let precoLitro;
+
   let barato = 0;
   let maisBarato;
 
+  console.log("Preços: ")
+  console.log(precos)
+
   for(let i=0; i<precos.length; i++) {
+
+    if(barato == 0) {
+      barato = precos[i][2]
+      maisBarato = precos[i]
+    } else if (barato > precos[i][2]) {
+      maisBarato = precos[i]
+    }    
+
     console.log(precos[i])
-    //   let precoItem = precos[i]
-
-  //   precoLitro = precoItem[0] * 100 / precoItem[1]
-
-  //   if(barato == 0) {
-  //     barato = precoLitro
-  //   } else if (barato > precoLitro) {
-  //     barato = precoLitro
-  //   } 
-  // }
-
     
-  //   maisBarato = precos.filter( item => item[0] == barato)
-
-
-  // console.log(`Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`)
-  // resultado.innerHTML = `Tamaho mais barato: ${maisBarato[0][1]}. R$ ${(maisBarato[0][0]).toFixed(2)} por litro.`;
-}
+  }
+  let resultado = [...maisBarato]
+  console.log("mais barato : ")
+  console.log(maisBarato)
+  
+  
+  console.log(`A unidade de ${maisBarato[1]}ml é a mais barata, saindo a R$${maisBarato[2]} por litro`)
 }
