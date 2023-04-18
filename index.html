@@ -12,106 +12,62 @@
 <body>
 
   <section class="first">
+
     <div class="principal">
 
     <div class="titulo">
       <h1>Calcular Preço Cerveja</h1>
     </div>
     
-      <div class="tipos">
+    <div class="tipos">
 
-        <div class="unidade" data-key="250">
-
-          <!-- <div class="modal">
-
-            <div class="modalContent">
-              
-              <p>Preço</p>
-              <input type="text" class="latas" id="l250" data-key="250" autofocus>
-              <button onclick="gravaPreco()">OK</button>
+        <div class="unidade" data-key="250" id="ml250lata">
+            <div class="nome-unidade">
+              <span>Lata</span>
+              <span>250 ml</span>
             </div>
-          </div> -->
-
-          <div class="unidadeContent">
-            <p>Lata 250</p>
-            <p><img src="/midia/ml250lata.jpg" alt=""></p>
-          </div>
-
         </div>
 
-        <div class="unidade" data-key="350">
-          <div class="modal">
-            <div class="modalContent">
-              <p>Preço</p>
-              <input type="text" class="latas" id="l250" data-key="250">
-              <button>OK</button>
-            </div>
+        <div class="unidade" data-key="350" id="ml350lata">
+          <div class="nome-unidade">
+            <span>Lata</span>
+            <span>355 ml</span>
           </div>
-          <div class="unidadeContent">
-            <p>Lata 350</p>
-            <p><img src="/midia/ml350lata.jpg" alt=""></p>
-          </div>
-          <!-- <input type="text" class="latas" id="l350" data-key="350" /> -->
         </div>
-        <div class="unidade" data-key="473">
-          <div class="modal">
-            <div class="modalContent">
-              <p>Preço</p>
-              <input type="text" class="latas" id="l250" data-key="250">
-              <button>OK</button>
-            </div>
+
+        <div class="unidade" data-key="473" id="ml473lata">
+          <div class="nome-unidade">
+            <span>Lata</span>
+            <span>473 ml</span>
           </div>
-          <div class="unidadeContent">
-            <p>Lata 473</p>
-            <p><img src="/midia/ml473lata.jpg" alt=""></p>
-          </div>
-          <!-- <input type="text" class="latas" id="l473" data-key="473" /> -->
         </div>
-        <div class="unidade" data-key="250">
-          <div class="modal">
-            <div class="modalContent">
-              <p>Preço</p>
-              <input type="text" class="latas" id="l250" data-key="250">
-              <button>OK</button>
-            </div>
-          </div> 
-          <div class="unidadeContent">
-            <p>Garrafa 250</p>
-            <p><img src="midia/ml250.jpg" alt=""></p>
+
+        <div class="unidade" data-key="250" id="ml250garrafa">
+          <div class="nome-unidade">
+            <span>Garrafa</span>
+            <span>250 ml</span>
           </div>
-          <!-- <input type="text" class="latas" id="g250" data-key="250" /> -->
         </div>
-        <div class="unidade" data-key="330">
-          <div class="modal">
-            <div class="modalContent">
-              <p>Preço</p>
-              <input type="text" class="latas" id="l250" data-key="250">
-              <button>OK</button>
-            </div>
-          </div>
-          <div class="unidadeContent">
-            <p>Garrafa 330</p>
-            <p><img src="midia/ml330.jpg" alt=""></p>
-          </div>
-          <!-- <input type="text" class="latas" id="g310" data-key="310" /> -->
-        </div>
-        <div class="unidade" data-key="600">
-          <div class="modal">
-            <div class="modalContent">
-              <p>Preço</p>
-              <input type="text" class="latas" id="l250" data-key="250">
-              <button>OK</button>
-            </div>
-          </div>
-          <div class="unidadeContent">
-            <p>Garrafa 600</p>
-            <p><img src="midia/ml600.jpg" alt=""></p>
-          </div>
-          <!-- <input type="text" class="latas" id="g600" data-key="600" /> -->
-        </div>  
-      </div>
-      <button id="calcular" onclick="calcular()" type="button">Calcular</button>
   
+        <div class="unidade" data-key="330" id="ml330garrafa">
+          <div class="nome-unidade">
+            <span>Garrafa</span>
+            <span>330 ml</span>
+          </div>
+        </div>
+
+        <div class="unidade" data-key="600" id="ml600garrafa">
+          <div class="nome-unidade">
+            <span>Garrafa</span>
+            <span>600 ml</span>
+          </div>
+      </div>
+
+      
+    </div>
+    
+    <div>
+      <button id="calcular" onclick="calcular()" type="button">Calcular</button>
     </div>
     
     <div class="first-footer">

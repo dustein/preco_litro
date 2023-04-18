@@ -11,12 +11,9 @@ body {
   text-align: center;
 }
 
-.latas {
-  width: 5em;
-}
 
 .first {
-  height: 98vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,18 +25,20 @@ body {
 .tipos {
   margin-top: 1em;
   margin-bottom: 0.5em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 0.8em;
-  row-gap: 0.8em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 2em;
+  text-align: center;
 }
 
 .unidade {
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-top: 1rem;
+  padding-left: 1rem;
   border-radius: 10px;
   box-shadow: 1px 1px 2px black;
   height: 14em;
@@ -49,15 +48,27 @@ body {
   font-weight: bold;
 }
 
-.unidade img {
-  max-height: 14.5em;
+.unidade:hover {
+  border-radius: 60%;
+}
+
+.nome-unidade {
+  color: black;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .titulo {
-  font-size: 14px;
+  font-size: 2.2rem ;
   width: 100%;
   text-align: center;
   background-color: rgb(255, 255, 0, 0.1);
+}
+
+.titulo h1 {
+  margin: 2rem;
 }
 
 .second {
@@ -70,34 +81,47 @@ body {
   background-color: rgb(255, 255, 0, 0.8);
   font-weight: bold;
   margin-top: 1.5em;
-  padding: 6px 20px;
+  padding: 1em 1em;
   border-radius: 8px;
 }
 
-
-/* Modal Pega Preco */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+#calcular:hover {
+  background-color: rgba(255, 255, 160, 0.8);
+  border-color: crimson;
 }
 
-.modalContent {
-  font-size: 2rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fafafaa4;
-  width: 50vw;
-  margin: auto;
-  padding-bottom: 3rem;
+#ml250lata {
+  background-image: url('midia/lata_250ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ml350lata {
+  background-image: url('midia/lata_355ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ml473lata {
+  background-image: url('midia/lata_473ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ml250garrafa {
+  background-image: url('midia/garrafa_250ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ml330garrafa {
+  background-image: url('midia/garrafa_330ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ml600garrafa {
+  background-image: url('midia/garrafa_600ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
