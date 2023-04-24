@@ -53,15 +53,21 @@ body {
 }
 
 .unidade:hover {
-  border-radius: 60%;
+  border-radius: 30%;
+  border: solid 1px;
+  border-color: rgba(156, 13, 13, 0.373);
 }
 
 .nome-unidade {
   color: black;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+#lataGarrafa {
+  font-size: 1.5rem;
 }
 
 .titulo {
@@ -86,7 +92,7 @@ body {
   font-weight: bold;
   margin-top: 1.5em;
   padding: 1em 1em;
-  border-radius: 8px;
+  border-radius: 1.5rem;
 }
 
 #calcular:hover {
@@ -96,36 +102,36 @@ body {
 
 #ml250lata {
   background-image: url('midia/lata_250ml.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 #ml350lata {
   background-image: url('midia/lata_355ml.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 #ml473lata {
   background-image: url('midia/lata_473ml.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 #ml250garrafa {
   background-image: url('midia/garrafa_250ml.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 #ml330garrafa {
   background-image: url('midia/garrafa_330ml.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 #ml600garrafa {
   background-image: url('midia/garrafa_600ml.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
