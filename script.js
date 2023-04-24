@@ -11,7 +11,7 @@ unidades.forEach( item => {
   let valorDoInput = 0;
   item.addEventListener("click", () => {
 
-    valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml`, "0.00"))
+    valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml :`, "0.00"))
     precoLitro = valorDoInput * 1000 / item.dataset.key
     
     console.log(valorDoInput, precoLitro, item.dataset.key)
@@ -50,10 +50,9 @@ function calcular() {
     console.log(precos[i])
     
   }
-  let resultado = [...maisBarato]
-  console.log("mais barato : ")
-  console.log(maisBarato)
-  
-  
+
   console.log(`A unidade de ${maisBarato[1]}ml é a mais barata, saindo a R$${maisBarato[2]} por litro`)
+
+  
+
 }
