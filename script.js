@@ -50,9 +50,17 @@ function calcular() {
     console.log(precos[i])
     
   }
-
+  let resultado = [...maisBarato]
+  console.log("mais barato : ")
+  console.log(maisBarato)
+  
+  
   console.log(`A unidade de ${maisBarato[1]}ml é a mais barata, saindo a R$${maisBarato[2]} por litro`)
 
-  
-
+  const resultModal = document.querySelector("#result-modal");
+  const resulUnidade = document.querySelector("#melhorUnidade");
+  const resultPrecoLitro = document.querySelector("#melhorPrecoLitro");
+  resulUnidade.innerText = maisBarato[1];
+  resultPrecoLitro.innerText = maisBarato[2];
+  resultModal.style.display = "block"
 }
