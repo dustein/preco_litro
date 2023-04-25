@@ -21,43 +21,54 @@
     
     <div class="tipos">
 
-        <div class="unidade" data-key="250" id="ml250lata">
-            <div class="nome-unidade">
-              <span id="lataGarrafa">Lata</span>
+        <div class="unidade" data-key="250" data-tipo="Latinha" id="ml250lata">
+          <div id="input"></div>
+            <div class="nomeUnidade">
+              <span id="lataGarrafa">Latinha</span>
               <span>250 ml</span>
             </div>
         </div>
 
-        <div class="unidade" data-key="350" id="ml350lata">
-          <div class="nome-unidade">
+        <div class="unidade" data-key="250" id="ml250garrafa" data-tipo="Long Neck">
+          <div id="input"></div>
+
+          <div class="nomeUnidade">
+            <span id="lataGarrafa">Long Neck</span>
+            <span>250 ml</span>
+          </div>
+        </div>
+
+        <div class="unidade" data-key="355" data-tipo="Lata" id="ml355lata">
+          <div id="input"></div>
+
+          <div class="nomeUnidade">
             <span id="lataGarrafa">Lata</span>
             <span>355 ml</span>
           </div>
         </div>
 
-        <div class="unidade" data-key="473" id="ml473lata">
-          <div class="nome-unidade">
-            <span id="lataGarrafa">Lata</span>
-            <span>473 ml</span>
-          </div>
-        </div>
+        <div class="unidade" data-key="330" data-tipo="Long Neck" id="ml330garrafa">
+          <div id="input"></div>
 
-        <div class="unidade" data-key="250" id="ml250garrafa">
-          <div class="nome-unidade">
-            <span id="lataGarrafa">Garrafa</span>
-            <span>250 ml</span>
-          </div>
-        </div>
-  
-        <div class="unidade" data-key="330" id="ml330garrafa">
-          <div class="nome-unidade">
-            <span id="lataGarrafa">Garrafa</span>
+          <div class="nomeUnidade">
+            <span id="lataGarrafa">Long Neck</span>
             <span>330 ml</span>
           </div>
         </div>
 
-        <div class="unidade" data-key="600" id="ml600garrafa">
-          <div class="nome-unidade">
+        <div class="unidade" data-key="473" data-tipo="Latão" id="ml473lata">
+          <div id="input"></div>
+
+          <div class="nomeUnidade">
+            <span id="lataGarrafa">Latão</span>
+            <span>473 ml</span>
+          </div>
+        </div>
+
+        <div class="unidade" data-key="600" data-tipo="Garrafa" id="ml600garrafa">
+          <div id="input"></div>
+
+          <div class="nomeUnidade">
             <span id="lataGarrafa">Garrafa</span>
             <span>600 ml</span>
           </div>
@@ -79,8 +90,15 @@
     <div class="result-conteudo">
         <span class="close">&times;</span>
         <h2>Resultado - Melhor Custo x Benefício</h2>
-        <p>Unidade mais em conta: <span id="melhorUnidade"></span> ml</p>
-        <p>Preço por litro: <span id="melhorPrecoLitro"></span></p>
+
+        <p>Unidade mais em conta:</p>
+        
+        <div class="mostra-tipo">
+          <span id="melhorTipo"> </span>
+          <span id="melhorUnidade"> </span> ml
+        </div>
+        
+        <p>Preço por litro: R$ <span id="melhorPrecoLitro"></span></p>
         <button id="reiniciar">Reiniciar</button>
     </div>
   </div>
