@@ -15,9 +15,15 @@ unidades.forEach( item => {
 
     precoLitro = valorDoInput * 1000 / item.dataset.key
     
-    item.style.border = "solid 0.4rem rgb(23, 239, 95)";
-    const textoInput = item.querySelector("#input")
-    textoInput.innerText = `R$ ${valorDoInput}`
+    item.style.border = "solid 0.3rem rgba(50, 243, 114, 0.677)";
+
+    const novoInput = document.createElement("div")
+    novoInput.setAttribute("id", "input")
+    novoInput.innerText = `R$ ${valorDoInput}`
+    item.appendChild(novoInput)
+
+    // const textoInput = item.querySelector("#input")
+    // textoInput.innerText = `R$ ${valorDoInput}`
     
 
     console.log(valorDoInput, precoLitro, item.dataset.key, item.dataset.tipo)
@@ -31,7 +37,6 @@ unidades.forEach( item => {
     }
     //------------
 
-    nomeUnidade.style.color = "green"
   })
 })
 // -----------------
