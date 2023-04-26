@@ -198,6 +198,11 @@ body {
   border-radius: 1.5rem;
 }
 
+#reiniciar:hover {
+  background-color: rgba(255, 255, 160, 0.8);
+  border-color: crimson;
+}
+
 .result-conteudo span {
   font-size: 2rem;
 }
