@@ -13,68 +13,52 @@
 
   <section class="first">
 
-    <!-- <div class="principal"> -->
-
     <div class="titulo">
       <h1>Calcular Preço Cerveja</h1>
     </div>
     
     <div class="tipos">
-
-        <div class="unidade" data-key="250" data-tipo="Latinha" id="ml250lata">
-          <!-- <div id="input"></div> -->
-          <div class="nomeUnidade">
-            <span id="lataGarrafa">Latinha</span>
-            <span>250 ml</span>
-          </div>
+      <div class="unidade" data-key="250" data-tipo="Latinha" id="ml250lata">
+        <div class="nomeUnidade">
+          <span id="lataGarrafa">Latinha</span>
+          <span>250 ml</span>
         </div>
-
-        <div class="unidade" data-key="250" id="ml250garrafa" data-tipo="Long Neck">
-          <!-- <div id="input"></div> -->
-
-          <div class="nomeUnidade">
-            <span id="lataGarrafa">Long Neck</span>
-            <span>250 ml</span>
-          </div>
-        </div>
-
-        <div class="unidade" data-key="355" data-tipo="Lata" id="ml355lata">
-          <!-- <div id="input"></div> -->
-
-          <div class="nomeUnidade">
-            <span id="lataGarrafa">Lata</span>
-            <span>355 ml</span>
-          </div>
-        </div>
-
-        <div class="unidade" data-key="330" data-tipo="Long Neck" id="ml330garrafa">
-          <!-- <div id="input"></div> -->
-
-          <div class="nomeUnidade">
-            <span id="lataGarrafa">Long Neck</span>
-            <span>330 ml</span>
-          </div>
-        </div>
-
-        <div class="unidade" data-key="473" data-tipo="Latão" id="ml473lata">
-          <!-- <div id="input"></div> -->
-
-          <div class="nomeUnidade">
-            <span id="lataGarrafa">Latão</span>
-            <span>473 ml</span>
-          </div>
-        </div>
-
-        <div class="unidade" data-key="600" data-tipo="Garrafa" id="ml600garrafa">
-          
-          <div class="nomeUnidade">
-            <!-- <div id="input"></div> -->
-            <span id="lataGarrafa">Garrafa</span>
-            <span>600 ml</span>
-          </div>
       </div>
 
-      
+      <div class="unidade" data-key="250" id="ml250garrafa" data-tipo="Long Neck">
+        <div class="nomeUnidade">
+          <span id="lataGarrafa">Long Neck</span>
+          <span>250 ml</span>
+        </div>
+      </div>
+
+      <div class="unidade" data-key="355" data-tipo="Lata" id="ml355lata">
+        <div class="nomeUnidade">
+          <span id="lataGarrafa">Lata</span>
+          <span>355 ml</span>
+        </div>
+      </div>
+
+      <div class="unidade" data-key="330" data-tipo="Long Neck" id="ml330garrafa">
+        <div class="nomeUnidade">
+          <span id="lataGarrafa">Long Neck</span>
+          <span>330 ml</span>
+        </div>
+      </div>
+
+      <div class="unidade" data-key="473" data-tipo="Latão" id="ml473lata">
+        <div class="nomeUnidade">
+          <span id="lataGarrafa">Latão</span>
+          <span>473 ml</span>
+        </div>
+      </div>
+
+      <div class="unidade" data-key="600" data-tipo="Garrafa" id="ml600garrafa">
+        <div class="nomeUnidade">
+          <span id="lataGarrafa">Garrafa</span>
+          <span>600 ml</span>
+        </div>
+      </div>    
     </div>
     
     <div>
@@ -84,27 +68,27 @@
     <div class="first-footer">
       <p>&copy; DuStein</p>
     </div>
+
   </section>
 
   <div id="result-modal" class="modal">
     <div class="result-conteudo">
-        <h2>Resultado - Melhor Custo x Benefício</h2>
+      <h2>Resultado - Melhor Custo x Benefício</h2>
 
-        <p>Unidade mais em conta:</p>
+      <p>Unidade mais em conta:</p>
         
-        <div class="mostra-tipo">
-          <span id="melhorTipo"> </span>
-          <span id="melhorUnidade"> </span> ml
-        </div>
+      <div class="mostra-tipo">
+        <span id="melhorTipo"> </span>
+        <span id="melhorUnidade"> </span> ml
+      </div>
         
-        <p>Preço por litro: R$ <span id="melhorPrecoLitro"></span></p>
-        <button id="reiniciar" onClick="window.location.reload()">Reiniciar</button>
+      <p>Preço por litro: R$ <span id="melhorPrecoLitro"></span></p>
+      <button id="reiniciar" onClick="window.location.reload()">Reiniciar</button>
     </div>
   </div>
 
-
-
   <section class="second">
+    <h2>Embalagem com Melhor Custo Benefício</h2>
     <p>Está no mercado comprando cerveja, e não sabe qual tamanho de latinha está mais em conta?</p>
     <p>Latinha, latão, ou long neck? Garrafa de 600 ou Litrão? Qual sai mais barato?</p>
     <p>Com esta aplicação, vamos calcular facilmente o preço por litro de cada tamanho de embalagem para ver a mais barata, a que tem mais cerveja por menos dinheiro.</p>
