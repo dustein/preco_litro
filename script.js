@@ -4,14 +4,12 @@ const unidades = document.querySelectorAll('.unidade');
 const resultado = document.querySelector(".tipos");
 const precos = [];
 
-
-
 //pop up pega preço
 unidades.forEach( item => {
   let valorDoInput = 0;
   item.addEventListener("click", () => {
 
-    valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml :`, "0.00"));
+    valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml :`));
 
     precoLitro = valorDoInput * 1000 / item.dataset.key
     
@@ -21,10 +19,6 @@ unidades.forEach( item => {
     novoInput.setAttribute("id", "input")
     novoInput.innerText = `R$ ${valorDoInput}`
     item.appendChild(novoInput)
-
-    // const textoInput = item.querySelector("#input")
-    // textoInput.innerText = `R$ ${valorDoInput}`
-    
 
     console.log(valorDoInput, precoLitro, item.dataset.key, item.dataset.tipo)
 
@@ -65,6 +59,7 @@ function calcular() {
   // let resultado = [...maisBarato]
   console.log("mais barato : ")
   console.log(maisBarato)
+  const precoBarato = maisBarato[0];
   const tamanhoBarato = maisBarato[1];
   const litroBarato = (maisBarato[2]).toFixed(2);
   const tipoBarato = maisBarato[3];
@@ -76,8 +71,10 @@ function calcular() {
   const resultTipo = document.querySelector("#melhorTipo")
   const resulUnidade = document.querySelector("#melhorUnidade");
   const resultPrecoLitro = document.querySelector("#melhorPrecoLitro");
+  const resultPreco = document.querySelector("#melhorPreco")
   resultTipo.innerText = tipoBarato;
   resulUnidade.innerText = tamanhoBarato;
+  resultPreco.innerText = precoBarato;
   resultPrecoLitro.innerText = litroBarato;
   resultModal.style.display = "block"
 }

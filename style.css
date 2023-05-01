@@ -7,11 +7,11 @@
 html {
   font-size: 62.5%;
 }
-body {
+/* body {
   max-width: 500px;
   margin: auto;
   background-color: rgb(44, 44, 44);
-}
+} */
 
 .first {
   height: 100vh;
@@ -207,7 +207,7 @@ body {
   background-color: rgb(235, 246, 235);
 }
 
-#melhorTipo, #melhorUnidade {
+#melhorTipo, #melhorUnidade, #melhorPreco {
   font-size: 3rem;
   font-weight: 600;
 }
