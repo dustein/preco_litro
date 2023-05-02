@@ -7,26 +7,19 @@
 html {
   font-size: 62.5%;
 }
-/* body {
-  max-width: 500px;
-  margin: auto;
-  background-color: rgb(44, 44, 44);
-} */
 
 .first {
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1rem;
   background-image: url('midia/espuma-chopp.jpg');
   background-size: cover;
 }
 
 .tipos {
-  /* margin-top: 0em; */
-  /* margin-bottom: 0.5em; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,12 +37,14 @@ html {
   box-shadow: 1px 1px 2px black;
   height: 12em;
   width: 12em;
+  max-width: 12em;
+  max-height: 12em;
   font-weight: bold;
 }
 
 
 .unidade:hover {
-  border-radius: 20%;
+  border-radius: 5%;
   border: solid 0.1rem;
 }
 
@@ -60,12 +55,11 @@ html {
   text-align: center;
   padding: 1rem;
   border-radius: 10%;
-  background-color: rgb(0,0,0);
   background-color: rgba(17, 17, 17, 0.75);
 }
 
 .nomeUnidade {
-  font-size: 2.6rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -73,7 +67,7 @@ html {
 }
 
 #lataGarrafa {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .titulo {
@@ -84,22 +78,44 @@ html {
 }
 
 .second {
-  font-size: 1.6rem;
-  padding: 1em;
-  background-color: #FAFAFA;
+  font-size: 2rem;
+  line-height: 4rem;
+  padding: 2em;
+  background-color: #000000;
+  color: rgb(233, 252, 227);
+}
+
+.second p {
+  margin: 0.5rem;
+}
+
+#botoes-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #calcular {
   background-color: rgb(255, 255, 0, 0.8);
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
   font-weight: bold;
   margin-top: 1.5em;
-  padding: 1em 1em;
+  padding: 1em 2em;
   border-radius: 1.5rem;
 }
 
 #calcular:hover {
   background-color: rgba(255, 255, 160, 0.8);
   border-color: crimson;
+}
+
+#reiniciar-main {
+  background-color: rgba(255, 255, 212, 0.8);
+  margin-top: 1.5em;
+  letter-spacing: 0.5rem;
+  padding: 1em 1em;
+  border-radius: 1.5rem;
 }
 
 #ml250lata {

@@ -9,27 +9,28 @@ unidades.forEach( item => {
   let valorDoInput = 0;
   item.addEventListener("click", () => {
 
-    valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml :`));
+    valorDoInput = Number(window.prompt(`Preço da unidade ${item.dataset.key}ml :`).replace(",", "."));
+
+    // valida input numero
+    if(valorDoInput < 0 || valorDoInput > 100 || isNaN(valorDoInput) == true) {
+      console.log(valorDoInput + "negativo ou mais que cem")
+      window.alert("Algo errado. Verifique se digitou um número válido...")
+    }
 
     precoLitro = valorDoInput * 1000 / item.dataset.key
+
+    precos.push([valorDoInput, Number(item.dataset.key), precoLitro, item.dataset.tipo])
     
     item.style.border = "solid 0.3rem rgba(50, 243, 114, 0.677)";
 
     const novoInput = document.createElement("div")
     novoInput.setAttribute("id", "input")
-    novoInput.innerText = `R$ ${valorDoInput}`
+    novoInput.innerText = `R$ ${valorDoInput.toFixed(2)}`
     item.appendChild(novoInput)
 
     console.log(valorDoInput, precoLitro, item.dataset.key, item.dataset.tipo)
 
-    
-    //valida input
-    if(typeof(valorDoInput != NaN)) {
-      precos.push([valorDoInput, Number(item.dataset.key), precoLitro, item.dataset.tipo])
-    } else {
-      console.log("Nao eh um numero")
-    }
-    //------------
+
 
   })
 })
@@ -74,7 +75,7 @@ function calcular() {
   const resultPreco = document.querySelector("#melhorPreco")
   resultTipo.innerText = tipoBarato;
   resulUnidade.innerText = tamanhoBarato;
-  resultPreco.innerText = precoBarato;
+  resultPreco.innerText = precoBarato.toFixed(2);
   resultPrecoLitro.innerText = litroBarato;
   resultModal.style.display = "block"
 }
