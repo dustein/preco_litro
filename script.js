@@ -13,8 +13,9 @@ unidades.forEach( item => {
 
     // valida input numero
     if(valorDoInput < 0 || valorDoInput > 100 || isNaN(valorDoInput) == true) {
-      console.log(valorDoInput + "negativo ou mais que cem")
+      console.log(valorDoInput + " negativo ou mais que cem")
       window.alert("Algo errado. Verifique se digitou um número válido...")
+      valorDoInput = 0
     }
 
     precoLitro = valorDoInput * 1000 / item.dataset.key
@@ -46,8 +47,9 @@ function calcular() {
   console.log(precos)
 
   for(let i=0; i<precos.length; i++) {
-
-    if(barato == 0) {
+    if (precos[i][2] === NaN) {
+      console.log("not number")
+    } else if(barato == 0) {
       barato = precos[i][2]
       maisBarato = precos[i]
     } else if (barato > precos[i][2]) {
