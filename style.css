@@ -30,23 +30,25 @@ html, body {
 }
 
 .tipos {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 2em;
-  row-gap: 2em;
+  justify-content: center; */  
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 4em;
+  row-gap: 4em;
 }
 
 .unidade {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: start; */
   /* flex-basis: 30%; */
   padding: 0.5rem;
   border-radius: 3px;
   box-shadow: 3px 3px 5px black;
-  width: 18em;
-  height: 18em;
+  min-height: 18em;
+  min-width: 18em;
   font-weight: bold;
 }
 
@@ -100,7 +102,7 @@ html, body {
 .botoes-inicial {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 #calcular {
