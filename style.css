@@ -30,28 +30,25 @@ html, body {
 }
 
 .tipos {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */  
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 4em;
-  row-gap: 4em;
+  grid-template-columns: repeat(2, auto);
+  gap: 2em;
 }
 
 .unidade {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: start; */
-  /* flex-basis: 30%; */
-  padding: 0.5rem;
+  border: solid 2px rgb(189, 189, 189);
+  border-radius: 5px;
+  /* padding: 0.5rem;
   border-radius: 3px;
   box-shadow: 3px 3px 5px black;
-  min-height: 18em;
-  min-width: 18em;
-  font-weight: bold;
+  font-weight: bold; */
 }
 
+.unidade img {
+  max-width: 40vw;
+  height: auto;
+  margin-bottom: -2px;
+}
 
 .unidade:hover {
   border-radius: 5%;
@@ -69,11 +66,12 @@ html, body {
 }
 
 .nomeUnidade {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: start;
   color: #828181;
+  
 }
 
 #lataGarrafa {
@@ -129,11 +127,11 @@ html, body {
   border-radius: 1.5rem;
 }
 
-#ml250lata {
+/* #ml250lata {
   background-image: url('midia/lata_250ml.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
-}
+  background-size: cover;
+} */
 
 #ml355lata {
   background-image: url('midia/lata_355ml.jpg');
@@ -147,11 +145,11 @@ html, body {
   background-size: contain;
 }
 
-#ml250garrafa {
+/* #ml250garrafa {
   background-image: url('midia/garrafa_250ml.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 #ml330garrafa {
   background-image: url('midia/garrafa_330ml.jpg');
@@ -194,6 +192,10 @@ html, body {
   font-size: 1.8rem;
 }
 
+.result-conteudo h3 {
+  font-size: 1.5rem;
+}
+
 .result-conteudo p {
   font-size: 1.5rem;
 }
@@ -216,16 +218,16 @@ html, body {
 
 .mostra-tipo {
   border: solid 1px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1rem;
   background-color: rgb(235, 246, 235);
 }
 
 #melhorTipo, #melhorUnidade, #melhorPreco {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 #melhorPrecoLitro {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
