@@ -133,17 +133,17 @@ html, body {
   background-size: cover;
 } */
 
-#ml355lata {
+/* #ml355lata {
   background-image: url('midia/lata_355ml.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
-#ml473lata {
+/* #ml473lata {
   background-image: url('midia/lata_473ml.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 /* #ml250garrafa {
   background-image: url('midia/garrafa_250ml.jpg');
@@ -151,17 +151,17 @@ html, body {
   background-size: contain;
 } */
 
-#ml330garrafa {
+/* #ml330garrafa {
   background-image: url('midia/garrafa_330ml.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
-#ml600garrafa {
+/* #ml600garrafa {
   background-image: url('midia/garrafa_600ml.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 /* Modal */
  .modal {
