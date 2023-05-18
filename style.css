@@ -9,7 +9,7 @@ html, body {
 }
 
 .first {
-  height: 98vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,9 +45,9 @@ html, body {
 }
 
 .unidade img {
-  max-width: 40vw;
+  max-width: 30vw;
   height: auto;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
 }
 
 .unidade:hover {
@@ -105,11 +105,11 @@ html, body {
 
 #calcular {
   background-color: rgb(255, 255, 0, 0.8);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 0.5rem;
   font-weight: bold;
-  margin-top: 1.5em;
-  padding: 0.5em 2.5em;
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
   border-radius: 1rem;
 }
 
@@ -123,8 +123,8 @@ html, body {
   font-size: 1.2rem;
   margin-top: 1rem;
   letter-spacing: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 1.5rem;
+  padding: 0.2rem;
+  border-radius: 1rem;
 }
 
 /* #ml250lata {
