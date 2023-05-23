@@ -9,7 +9,7 @@ html, body {
 }
 
 .first {
-  height: 94vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
