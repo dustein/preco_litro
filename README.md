@@ -28,3 +28,5 @@ Aceita input do preço de cada tipo disponível, e calcula o preço por litro do
 </table>
 
 Desenvolvido em HTML, CSS e JavaScript puro.
+
+É uma página web comum que replica o ambiente de um App, com a tela inicial/principal ocupando o view height. Todo o uso da aplicação se dá no trecho inicial, não havendo necessidade de rolar a página.
