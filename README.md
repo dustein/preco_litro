@@ -4,6 +4,8 @@
 ## Demo
 <img src="./midia/preco_cerva.gif" width="360" alt="Aplicação Preço x Litro"/>
 
+### https://dustein.com.br/menor-preco-cerveja/
+
 ## Funcionalidade
 
 Aplicação para comparar o preço da mesma bebida oferecida em diferentes tamanhos de embalagens.
